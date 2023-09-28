@@ -8,10 +8,15 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>au fuck</Text>
-      <Button title="Show Toast" onPress={() => ShowToast("Hello")} />
-      <StatusBar style="auto" />
+      <Text style={styles.text}>
+        Hellow <Text style={{ color: "red" }}>World</Text>
+      </Text>
+      <Text style={styles.text}>
+        Hellow <Text style={{ color: "blue" }}>World</Text>
+      </Text>
+      <Text style={styles.text}>
+        Hellow <Text style={{ color: "black" }}>World</Text>
+      </Text>
     </View>
   );
 }
@@ -22,5 +27,9 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  text: {
+    fontSize: 30,
+    fontStyle: "italic",
   },
 });
